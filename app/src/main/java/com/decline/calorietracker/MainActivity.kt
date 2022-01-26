@@ -15,8 +15,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             CalorieTrackerTheme {
-                Surface(color = MaterialTheme.colors.background) {
-                }
+
             }
         }
     }
