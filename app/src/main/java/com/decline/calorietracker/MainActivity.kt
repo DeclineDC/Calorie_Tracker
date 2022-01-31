@@ -16,6 +16,7 @@ import com.decline.core.navigation.Route
 import com.decline.onboarding_presentation.activity.ActivityScreen
 import com.decline.onboarding_presentation.age.AgeScreen
 import com.decline.onboarding_presentation.gender.GenderScreen
+import com.decline.onboarding_presentation.goal.GoalScreen
 import com.decline.onboarding_presentation.height.HeightScreen
 import com.decline.onboarding_presentation.weight.WeightScreen
 import com.decline.onboarding_presentation.welcome.WelcomeScreen
@@ -69,7 +70,7 @@ class MainActivity : ComponentActivity() {
                             ActivityScreen(onNavigate = navController::navigate)
                         }
                         composable(Route.GOAL) {
-
+                            GoalScreen(onNavigate = navController::navigate)
                         }
                         composable(Route.TRACKER_OVERVIEW) {
 
