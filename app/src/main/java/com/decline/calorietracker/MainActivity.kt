@@ -15,6 +15,8 @@ import com.decline.calorietracker.ui.theme.CalorieTrackerTheme
 import com.decline.core.navigation.Route
 import com.decline.onboarding_presentation.age.AgeScreen
 import com.decline.onboarding_presentation.gender.GenderScreen
+import com.decline.onboarding_presentation.height.HeightScreen
+import com.decline.onboarding_presentation.weight.WeightScreen
 import com.decline.onboarding_presentation.welcome.WelcomeScreen
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -48,10 +50,16 @@ class MainActivity : ComponentActivity() {
 
                         }
                         composable(Route.HEIGHT) {
-
+                            HeightScreen(
+                                scaffoldState = scaffoldState,
+                                onNavigate = navController::navigate
+                            )
                         }
                         composable(Route.WEIGHT) {
-
+                            WeightScreen(
+                                scaffoldState = scaffoldState,
+                                onNavigate = navController::navigate
+                            )
                         }
                         composable(Route.NUTRIENT_GOAL) {
 
