@@ -25,7 +25,7 @@ import com.decline.tracker_presentation.R
 import com.decline.tracker_presentation.components.UnitDisplay
 
 @Composable
-fun NutrientBarInfo(
+fun NutrientsBarInfo(
     value: Int,
     goal: Int,
     name: String,
