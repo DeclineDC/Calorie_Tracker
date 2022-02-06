@@ -50,7 +50,6 @@ class TrackerOverviewViewModel @Inject constructor(
                         )
                     )
                 }
-
             }
             is TrackerOverviewEvent.OnDeleteTrackedFoodClick -> {
                 viewModelScope.launch {
@@ -78,7 +77,6 @@ class TrackerOverviewViewModel @Inject constructor(
                         } else it
                     }
                 )
-
             }
         }
     }
