@@ -69,7 +69,7 @@ fun TrackerOverviewScreen(
                         val foods = state.trackedFoods.filter {
                             it.mealType == meal.mealType
                         }
-                        state.trackedFoods.forEach { food ->
+                        foods.forEach { food ->
                             TrackedFoodItem(
                                 trackedFood = food,
                                 onDeleteClick = {
