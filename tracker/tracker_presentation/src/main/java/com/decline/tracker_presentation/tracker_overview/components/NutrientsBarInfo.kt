@@ -90,8 +90,8 @@ fun NutrientsBarInfo(
             UnitDisplay(
                 amount = value,
                 unit = stringResource(id = R.string.grams),
-                amountColor = if (value <= goal) MaterialTheme.colors.primary else goalExceededColor,
-                unitColor = if (value <= goal) MaterialTheme.colors.primary else goalExceededColor
+                amountColor = if (value <= goal) Color.White else goalExceededColor,
+                unitColor = if (value <= goal) Color.White else goalExceededColor
             )
             Text(
                 text = name,
